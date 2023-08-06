@@ -1,5 +1,6 @@
 defaults:
   - dataset: flowers
+  - model: dcgan
   - paths
   - _self_
 
