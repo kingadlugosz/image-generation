@@ -1,2 +1,5 @@
 hydra-core
 hydra-colorlog
+torch
+torchvision
+matplotlib
