@@ -1,1 +1,6 @@
+defaults:
+  - dataset: flowers
+  - paths
+  - _self_
+
 version: 0.1.0
