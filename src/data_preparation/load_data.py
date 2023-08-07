@@ -7,10 +7,10 @@ from torch.utils.data import DataLoader
 
 
 @hydra.main(version_base="1.3", config_path="../../conf", config_name="config")
-def load_data(cfg):
+def load_data(cfg) -> DataLoader:
     transform = transforms.Compose([
         transforms.ToTensor(),
-        transforms.Resize((64, 64)),
+        transforms.Resize((64, 64), antialias=True),
         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
     ])
 
